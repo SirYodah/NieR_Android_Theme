@@ -1,0 +1,26 @@
+<TaskerData sr="" dvi="1" tv="4.9u4m">
+	<Task sr="task11">
+		<cdate>1496350985477</cdate>
+		<edate>1496351235377</edate>
+		<id>11</id>
+		<nme>Menu_save</nme>
+		<pri>7</pri>
+		<Action sr="act0" ve="7">
+			<code>30</code>
+			<Int sr="arg0" val="333"/>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>192</code>
+			<Int sr="arg0" val="2"/>
+			<Str sr="arg1" ve="3">nier_save</Str>
+			<Int sr="arg2" val="2"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>cust_transparent</nme>
+		</Img>
+	</Task>
+</TaskerData>
