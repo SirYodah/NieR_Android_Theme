@@ -1,0 +1,18 @@
+<TaskerData sr="" dvi="1" tv="4.9u4m">
+	<Task sr="task15">
+		<cdate>1496353467548</cdate>
+		<edate>1496353467548</edate>
+		<id>15</id>
+		<nme>Menu_tick</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>192</code>
+			<Int sr="arg0" val="2"/>
+			<Str sr="arg1" ve="3">nier_menu_tick</Str>
+			<Int sr="arg2" val="2"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>cust_transparent</nme>
+		</Img>
+	</Task>
+</TaskerData>
