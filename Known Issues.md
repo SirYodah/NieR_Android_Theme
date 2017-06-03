@@ -14,6 +14,7 @@ Known Issues for Test Release 2.0
 
 * For events to appear in the Home screen info, they have to be created as full-day events in your calendar app. This is mostly because I have no fucking clue how calendar functions work in KLWP and couldn't find a way to get it to display the first event of any kind on a day.
 
+* There may be some misc. other problems with certain parts of the theme getting stuck or disappearing at seemingly random times. If this happens, I've always been able to fix it by opening KLWP, toggling the "Tasker?" global a few times, then saving and exiting. Otherwise, I'm not sure what actually causes these problems, please report if you find any, especially if they're reproduceable.
 
 
 Known Issues for Test Release 1.0
