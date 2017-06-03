@@ -5,44 +5,41 @@ Hello! If you're here, it's probably because you volunteered to test my NieR the
 
 Anyways, here's how to get started on all this.
 
-# SETUP
-
+# DOWNLOADS
+----------------------------------
 First, you'll need Kustom Live Wallpaper installed on your Android. [This one](https://play.google.com/store/apps/details?id=org.kustom.wallpaper&hl=en). You'll also need the pro version key, because you can't import themes without it. [You can find that here](https://play.google.com/store/apps/details?id=org.kustom.wallpaper.pro&hl=en).
-
-Second, you'll need the actual theme itself, click the download button on this repository and then download as a zip. Extract the files somewhere, hook your Android up to your computer via USB, and make sure to press 'Allow' when your device asks you to establish a connection to transfer data. All you need is the .klwp file, so copy that, and move it somewhere onto your phone's storage where you can find it. Don't import it from inside KLWP just yet though, there's some other things to do first.
 
 You'll also need Nova Launcher or a similar launcher, so that KLWP can play animations. The free version of Nova works just fine. [This is the one](https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher&hl=en). Once you have Nova Launcher, take some time to configure it to your liking. There are two things that you need to make sure of: One, that your phone has three screens. You can tap and hold anywhere on the screen to edit the number of screens with Nova. Second, that there is nothing on any of your screens, other than the top status bar (battery %, time, wifi, etc). This includes page indicators, search bars, or apps. It won't break anything if you keep these things, they'll just be on top of the wallpaper and look out of place.
 
+Now, you've got a decision to make: Do you want your phone to make various sounds from the game as you use it, such as the menu opening, selection, and closing sounds? Of course you do! Unfortunately, the only way to do this without rooting your phone is to buy Tasker, [which is here](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en). This will allow KLWP to make sounds when you interact with the theme, along with allowing for some more stable interactions with the theme. I highly recommend using it, but if you'd rather not spend the cash it shouldn't make your life too much more difficult.
+
+You'll also need the actual theme istelf, along with some optional files if you've decided to use Tasker. Click the download button on this repository and then download as a zip. Extract the files to somewhere where you can easily find and interact with them later.
+
+Lastly, head to [this reddit thread](https://www.reddit.com/r/nier/comments/642dx5/request_extraction/), and grab the "Incoming Call" sound file. It isn't necessary to the theme at all, but it's a sweet ringtone and you'll probably want it.
+
+# SETUP
 -------------------------------
-[Optional, but worth it]
+Now you gotta move all those downloads over to your Android. Hook it up to your PC via USB, and press 'Allow' if your device asks you to establish a connection. Grab the .klwp file and move it somewhere onto your phone where you can find it, doesn't really matter where. If you're going to be using Tasker, open up the Sound Assets folder and move all of them into your phone's Ringtones folder. Except for nier_mail_notify. Move that into your Notifications folder, and set it as your default notification sound if you want. The theme doesn't actually use it at all, it's just a nice thing to have.
 
-Do you want your phone to make the menu opening sound from the game as you unlock it? Of course you do! Unfortunately, the only way to do this without rooting your phone is to buy Tasker, [which is here](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en). If your phone is rooted, great! You don't need to buy it. I also can't help you at all, because my phone isn't rooted so I have no idea how to change the unlock sound. But if you do buy tasker, follow these next steps to get it working.
+Next is also for you Tasker users. Open up the Tasker Files folder that you downloaded, and then copy both the profiles and tasks folders. Copy those over to the Tasker folder on your phone. If the Tasker folder isn't there, try messing around with Tasker for a bit to see if it creates one, or just make it yourself in your phone's root folder. Once that's done, open up Tasker, and turn off 'Beginner Mode' in prefrences. Close out of preferences, and tap the Profiles tab, then select import. Two profiles should appear here if you moved the files over correctly. Import both of them. Then switch to the tasks tab, and tap it, selecting import again. There should be five tasks here, import all of them.
 
-First you'll need the sound file itself, which you can find over at [this reddit thread](https://www.reddit.com/r/nier/comments/642dx5/request_extraction/). You'll want the 'opening menu' sound. And probably the other one too, because it's a sweet ringtone.
-Then move it onto your phone, and into your ringtones folder so it's easy to find through Tasker.
+# IMPORTING
+--------------------------------------
+Now onto the good stuff. Boot up KLWP, and use the load preset option to import my preset that you put on your phone earlier. The theme should appear within KLWP. Before clicking the save button, head on over to the globals tab by swiping the menu to the right. There's a ton of variables here, but right now the only one you care about is the switch named "Tasker?" which should be about three down the list. It's pretty simple really, toggle that switch on if you use Tasker, and toggle it off if you don't use Tasker. Now that you've done that, hit save, wait a minute, and then exit KLWP. The theme should be applied! If the theme doesn't appear or you only see a solid image, try locking and unlocking your phone. Now, onwards to customization!
 
-[This next bit is blatantly stolen from this video](https://youtu.be/6D4XiflXdM0), as I followed this tutorial to do this and couldn't find a better way to do it. Open up Tasker, and create a new task called "Screen Unlocked". Open up this task, and add a Media Play Ringtone action. Edit this action so that the sound file points to your nier menu opening sound. You can also choose what type of sound it is and what stream it plays through, so for example if you set the stream to be ringer, the volume of the sound will use your current ringtone volume instead of something else like notification or media volume. Still inside this task, create a new Variable Set action. Name the variable "%Unlocked" without the quotes, and make it so this action sets it to 1. Now create a third action, this time selecting "Plugin", then "Kustom LWP", followed by "KLWP Send Variable". Edit this action so that it sends the Tasker String "%Unlocked" to the Kustom Variable "screen".
+# CUSTOMIZATION
+------------------------------------------------
+I've done some work to make the theme customizeable, so you can change a decent amount of things pretty easily using the Globals tab of KLWP, accessed by swiping to the right while in the root folder. Variables can be changed by either tapping the field, or tapping the select box and then the pencil that appears in the top right. Most important things are near the top, with some exceptions that you don't wanna forget towards the bottom. Let's go through them one at a time:
 
-Now exit out of this task, and create a second task called "Screen Locked". The actions in this will be nearly identical to the first task. The only changes are to not add an action to play a sound (Unless you want a sound to play when you lock your phone, which you might), and to set "%Unlocked" to 0 instead of 1.
+* "LockScrn": Set this image as what you use as your lock screen. It's used to properly fade from your lock screen into the unlock animation. 
 
-Next, swipe over to the Profiles screen, and create a new profile, using Event, followed by Display, and then Display Off. Set this profile to trigger the "Screen Locked" task. Now create a second profile, using the same conditions, except with Display Unlocked in place of Display Off. Have this trigger the "Screen Unlocked" task. 
+* "b-Anims": This switch controls the ambient animations of the lines and circles in the background. Switching it on will turn the animations on, and switching it off will turn them off. This is off by default, because while the animations do look very pretty, they also eat battery life like crazy. If you don't mind sacrificing your phone's battery, you can turn these on.
 
-And that's it!
+* "Tasker?": This switches the theme betwen two methods of handling animations when toggled. If you use Tasker, leave it on. If you don't use Tasker, make sure to turn it off.
 
---------------------------------
+* "u-Delay": This is an additonal delay that happens before the unlock animation if "Tasker?" is set to off. KLWP's method of detecting unlocks is a bit too quick sometimes, and you'll miss some of the animation unless a delay is added. If you aren't using Tasker, you should experiment with this to find a good-looking delay for you. This delay is in tenths of a second, so the default of four is 0.4 seconds, while changing it to ten would give a whole second delay.
 
-# IMPORTING AND CUSTOMIZATION
-
-
-Now onto the good stuff. Boot up KLWP, and use the load preset option to import my preset that you put on your phone earlier. Once you click the save button at the top, KLWP should apply the theme to your phone! It might ask for permission the first time, so make sure to let it do that. If it looks normal, great! Onwards to customization!
-
-I've done some work to make the theme customizeable, so you can change a decent amount of things pretty easily using the Globals tab of KLWP, accessed by swiping to the right while in the root folder. Variables can be changed by either tapping the field, or tapping the select box and then the pencil that appears in the top right. Important things are near the top, with some exceptions that you don't wanna forget towards the bottom. Let's go through them one at a time:
-
-* "unlock" This variable is used to trigger all of those fancy unlock animations. If you DIDN'T follow the optional steps, you'll need to change it off of its default. Tap it, and delete the formula that's currently in the formula editor, and then tap the star underneath it to see if Kustom exported my fav'd formulas with the preset. If it did, select "Unlock without tasker", then tap the check in the upper right corner. If it didn't, enter the following EXACTLY as shown: $if(si(locked),0,1)$
-
-* "LockScrn": Set this image as what you use as your lock screen. It's used to properly fade from your lock screen into the unlock animation.
-
-* "LNumItems": and "RNumItems" These control the number of options on the left and right screen respectively. Supports a maximum of 5 options.
+* "LNumItems": and "RNumItems" These control the number of options on the left and right screen respectively. Supports a maximum of 5 options. Set to however many options you want on each screen.
 
 * "NotFound": This is used as placeholder text when an item's information doesn't exist, don't worry about changing it unless you'd just rather it said something else.
 
@@ -54,13 +51,15 @@ I've done some work to make the theme customizeable, so you can change a decent 
 
 * "R-ToShow": This is used to determine which window to show on the right screen. I wouldn't touch this, as you could break the right screen.
 
+* "unlock": The formula that determines when the phone is unlocked if "Tasker?" is on. Does nothing if "Tasker?" is off. Changing this will break the unlock animation if you have "Tasker?" set to on, however I guess you could set it to be 1 if you'd rather never see the unlock animations.
+
 * "u-frame", "u-done", and "u-fcount": These control aspects of the unlock animation. These shouldn't be touched, unless you want the animation itself to play slower or faster, in which case you can safetly change u-frame.
 
 * "L-delay", "M-delay", and "R-delay": I only created these to make testing the top menu unlock animation easier. Fairly unnecessary, and they shouldn't need to be changed.
 
 * "Font": Well it's the font used. Unless you want the theme to not look at all like what it's supposed to, don't change this.
 
-* "Dark", "Medium", "Light", and "Backgrnd": These are the colors used. I wouldn't advise changing them, but be my guest if you want to.
+* "Dark", "Medium", "Light", and "Backgrnd": These are the colors used. The theme fully supports changing these colors, all items and images will update to reflect the new color. This can be useful if your phone's screen is calibrated incorrectly, causing the theme's colors to look wrong. I'll go more in-depth on this later in readme.
 
 * IMPORTANT SHIT BEGINS HERE
 
@@ -72,7 +71,9 @@ I've done some work to make the theme customizeable, so you can change a decent 
 
 And that's all for globals. Sorry that the important lists are at the bottom, but as you'll notice while editing, lists get sent to the bottom of the global variables whenever they get edited for some reason.
 
-Onwards! The next tab you'll want is Shortcuts, one swipe right of Globals. Here is where you'll set what touching a certain option does. These are pure personal preference, and you can safetly leave all of them blank, they just won't do anything when touched if you do. Again, we'll go through one by one.
+Onwards! The next tab you'll want is Shortcuts, one swipe right of Globals. Here is where you'll set what touching a certain option does. These are pure personal preference, and you can safetly leave all of them blank, they just won't do anything when touched if you do. You'll notice that some of the shortcuts have a chain link icon and are set to "Task Shorcut". These are what play the sounds when interacting with the theme, for some reason some of them show up here. Just ignore them, they *shouldn't* do anything if you don't have tasker. Hopefully.
+
+Again, we'll go through one by one.
 
 * "M Info": This is that thing in the bottom left of the middle screen that gives you the date and location. I normally set this to open my calendar, but you're free to set it to whatever.
 
@@ -81,5 +82,10 @@ Onwards! The next tab you'll want is Shortcuts, one swipe right of Globals. Here
 * "L Item 1" Through "L Item 5": Apps launched by touching the corresponding buttons on the left screen.
 
 * All of the remaining ones are app slots on the right screen. Format is RX-Y, where X is the number of the drawer opened by the corresponding menu button, and Y is the letter code of the slot, so A/B/C/D/E/F.
+
+
+Lastly, you may notice that the theme's colors look off compared to what you've seen from my screenshots. This is because many phone's screens are calibrated incorrectly by default. Also, some manufacturers go a step further and completely disable the ability to calibrate the screen without rooting (Thanks Samsung! *Not.*) If your colors look off, do some research and find out if your Android model is capable of screen calibration. If not, then you can try to fiddle with the colors from inside KLWP until it looks right, as I've made it so that literally everything in the theme can have its color changed. This is a bit tedious, but it's better than having the theme look really saturated and green all the time.
+
+--------------------------------------------------------------------------------
 
 And that's everything! You could go further if you want, and edit things directly inside of the root folder, but that place is a mess because my work is a mess and everything's a mess and you should just leave it alone if you want to stay sane. I won't stop you from trying though, but I've disabled exporting of changes until this is fully released. Once it's actually done I'll open it up so anyone can do anything to it and export, because I'm sure someone will want to fix some of my work to not be so terribly designed and optimized.
