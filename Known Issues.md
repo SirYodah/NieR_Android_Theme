@@ -2,6 +2,8 @@ I'll be updating this as more versions are released and more bugs are found.
 
 Known Issues for Test Release 3.0
 -------------------------------------
+* The music player will not show any information when the song is paused. This is actually intended, as my goal was to have song info remain visible while paused, and go away when the music app is closed or if playback is stopped. Unfortunately, some apps (looking at you, Spotify) don't properly report their state to KLWP, saying that they're paused when the app is actually closed and other things like that. The workaround for this is to just make the song information disappear whenever a song isn't playing.
+
 * Animations still get stuck if you swipe between screens too quickly. This appears to be rooted in how KLWP handles animations, so I don't believe there's anything I can do to fix it. Just don't swipe around too quickly, and you'll be good. Even if something gets stuck, fixing it is as simple as swiping away, waiting a second, then swiping back.
 
 * The included "tick" sound doesn't play when you swipe between screens. Tasker doesn't have the ability to tell which screen number you're on, and also can't read variables from KLWP. This means that a sound on swiping back and forth is impossible, unfortunately. I could make it so that the top buttons react to touch and bring you to their respective screens, but this would require a refactor of the entire theme that I'm just not willing to undertake right now.
