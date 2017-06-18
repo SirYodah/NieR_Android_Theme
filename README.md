@@ -41,6 +41,8 @@ I've done some work to make the theme customizeable, so you can change a decent 
 
 * "LNumItems": and "RNumItems" These control the number of options on the left and right screen respectively. Supports a maximum of 5 options. Set to however many options you want on each screen.
 
+* "Music?": This switch turns the music player on or off. If you'd rather not have the music player visible, that's what this is for.
+
 * "NotFound": This is used as placeholder text when an item's information doesn't exist, don't worry about changing it unless you'd just rather it said something else.
 
 * "L-Name", "M-Name", and "R-Name": These are the names of the left, middle, and right screen respectively. You can change these to rename a specific screen, in case you don't want to use if for what I have it set as by default.
