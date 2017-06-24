@@ -1,9 +1,9 @@
 # NieR_Android_Theme
 Work in progress of a NieR: Automata themed KLWP preset.
 
-Hello! If you're here, it's probably because you volunteered to test my NieR theme before I make it public. If that's not why you're here, well feel free to stick around, there's literally nothing I can do about it because I didn't wanna pay to use private repositories.
+Hello! This readme will walk you through how to download and install my NieR Android theme. It'll take a little while to get everything working correctly, so get comfy.
 
-Anyways, here's how to get started on all this.
+Here's how to get started on all this.
 
 # DOWNLOADS
 ----------------------------------
@@ -90,4 +90,6 @@ Lastly, you may notice that the theme's colors look off compared to what you've 
 
 --------------------------------------------------------------------------------
 
-And that's everything! You could go further if you want, and edit things directly inside of the root folder, but that place is a mess because my work is a mess and everything's a mess and you should just leave it alone if you want to stay sane. I won't stop you from trying though, but I've disabled exporting of changes until this is fully released. Once it's actually done I'll open it up so anyone can do anything to it and export, because I'm sure someone will want to fix some of my work to not be so terribly designed and optimized.
+And that's everything! You could go further if you want, and edit things directly inside of the root folder, but that place is a mess because my work is a mess and everything's a mess and you should just leave it alone if you want to stay sane. I won't stop you from trying though, because I'm sure someone will want to fix some of my work to not be so terribly designed and optimized. You can even export your changes and host if yourself if you want, I won't stop you. Just remember to credit me and not claim it as your own work, or else I'll be very mad, and I'll send you messages, letting you know how mad I am.
+
+Before you head out, make sure to check out the Known Issues file, as the theme isn't perfect and you should know what you're getting yourself into. I don't plan on releasing any updates to this at the moment, but if you find something absolutely broken that slipped through my tests that I don't have documented, then please let me know!
